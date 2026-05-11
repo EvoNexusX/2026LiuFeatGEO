@@ -82,13 +82,13 @@ featgeo/
 |-- geo_functions.py
 |-- utils.py
 `-- geo_ad/
-    |-- run_geo_ad.py            # main experiment worker
-    |-- run_parallel.py          # shard launcher
-    |-- merge_results.py         # result aggregation
-    |-- feature_schema.py        # feature definitions
-    |-- feature_extractor.py     # feature inference
-    |-- ga_optimizer.py          # GA and NSGA-II search
-    |-- multi_objective.py       # objective helpers
-    |-- query_probe.py           # optional query probing
-    `-- result_formatter.py
+    |-- run_geo_ad.py            # runs the experiment on one data slice
+    |-- run_parallel.py          # launches parallel experiment slices
+    |-- merge_results.py         # combines slice outputs into final reports
+    |-- feature_schema.py        # defines the optimization feature space
+    |-- feature_extractor.py     # maps source pages into feature configs
+    |-- ga_optimizer.py          # searches feature configs with evolution
+    |-- multi_objective.py       # Pareto ranking and NSGA-II selection
+    |-- query_probe.py           # selects feature sources with query probes
+    `-- result_formatter.py      # formats logs, tables, and summaries
 ```
