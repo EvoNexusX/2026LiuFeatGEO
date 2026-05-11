@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Runtime outputs
+data/
+data*/
+featgeo/data/
+logs/
+logs*/
+result/
+response_usages_16k/
+*.log
+*.pid
+*.pkl
+
+# Generated experiment artifacts
+geo_ad/logs*/
+featgeo/geo_ad/logs*/
+geo_ad/response_usages_16k/
+
+# Local README draft assets
+assets/figures/feature_optimization.png
+
+# Local/editor files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Backups
+*.backup
