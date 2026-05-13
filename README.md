@@ -5,6 +5,8 @@
   <a href="https://arxiv.org/abs/2604.19113"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2604.19113-b31b1b?style=for-the-badge"></a>
 </p>
 
+This paper has been accepted to ACL 2026.
+
 ## TLDR
 
 **FeatGEO** optimizes generated advertisement webpages in an interpretable feature space to improve citation visibility in generative search while maintaining content quality.
@@ -91,4 +93,15 @@ featgeo/
     |-- multi_objective.py       # Pareto ranking and NSGA-II selection
     |-- query_probe.py           # selects feature sources with query probes
     `-- result_formatter.py      # formats logs, tables, and summaries
+```
+
+## Citation
+
+```bibtex
+@article{liu2026think,
+  title={Think Before Writing: Feature-Level Multi-Objective Optimization for Generative Citation Visibility},
+  author={Liu, Zikang and Xu, Peilan},
+  journal={arXiv preprint arXiv:2604.19113},
+  year={2026}
+}
 ```
